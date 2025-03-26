@@ -36,7 +36,6 @@ def extract_sections(file_path):
             current_section = line
         elif current_section:
             sections[current_section].append(line)
-    print(sections)
     return sections
 
 
