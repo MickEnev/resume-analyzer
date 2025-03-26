@@ -1,0 +1,79 @@
+mick enev
+plainfield, il, usa
+mickenevgmail.com
+815 416-8926
+inmickenev
+mickenev.com
+education
+master of computer science
+university of illinois urbana-champaign urbana, il 2025 4.0
+bachelor of arts in economics
+minor in computer science university of illinois urbana-champaign urbana, il 2024 3.62
+skills
+python, c++, c, java, javascript, sql, mongodb, neo4j, html, css, r
+react.js, mysql, postgresql, node.js, github, docker, flask, tableau, unreal engine, microsoft office
+projects
+ai weather app
+www.youtube.comwatchvpagxi50ewsc october 2024 - december 2024
+developed an ai-powered weather app using java and android studio, integrating real-time weather apis to provide accurate forecasts for 10,000+ u.s.
+cities, increasing user engagement by 40.
+
+engineered advanced data processing algorithms to enhance forecast accuracy and enable ai-driven responses to user queries with 95 precision,
+leveraging seamless api integration.
+
+designed and implemented a custom caching system, reducing api call frequency by 30, optimizing performance, and minimizing user data usage.
+
+integrated firebase for authentication and data storage, ensuring secure user management and efficient data retrieval while enhancing scalability..
+
+database dashboard
+github.commickenevmickmarcos.411 july 2024 - august 2024
+engineered a comprehensive database dashboard in python, integrating mysql, mongodb, and neo4j to provide real-time data visualization and
+management, increasing data retrieval efficiency by 35.
+
+implemented multi-database querying, optimizing cross-database data retrieval and reducing query response time by 50.
+
+leveraged sql views to simplify complex queries, further boosting data retrieval speed by 2050..
+
+tower defense game
+drive.google.comfiled12nkk7tixv-8sy8ycsrxhsbyamhi9yfpviewpli1 january 2024 - may 2024
+led a team of five in building a fully-functional tower defense game using unreal engine 5.
+
+engineered advanced game mechanics and ai behavior using c++ in unreal engine 5, resulting in immersive gameplay with increasing difficulty.
+
+organized group meetings and delegated responsibilities, ensuring timely project delivery..
+
+experience
+computer science ai trainer
+outlier ai
+january 2024 - present
+optimized ai-generated responses by refining algorithms and improving code in python, javascript, and c++, enhancing efficiency and accuracy.
+
+analyzed software requirements to identify key functionalities, constraints, and edge cases, ensuring efficient ai-generated code solutions.
+
+reviewed and validated 100+ ai-generated programming solutions, identifying errors and inconsistencies to maintain 90+ accuracy and improve ai-
+driven code generation.
+
+debugged and refactored code using test-driven development, ensuring a 100 functional final product with improved reliability and performance..
+
+research analyst intern
+the american energy society
+february 2023 - may 2023
+conducted extensive research on global university energy programs, enhancing analytical skills in data collection and synthesis.
+
+collected and analyzed data on 20+ global university energy programs, compiling insights into an excel spreadsheet to support decision-making.
+
+collaborated with a cross-functional team of 12+ individuals to deliver data-driven insights..
+
+software engineering tutor
+university of illinois urbana-champaign
+august 2022 - december 2022
+mentored students in complex algorithmic problem-solving, resulting in a 30 increase in successful project completions and a stronger grasp of data
+structures and oop principles.
+
+led weekly office hours, assisting 30+ students with debugging and feature implementation for their semester projects.
+
+provided guidance on building key features, including a dynamic restaurant recommendation system, user-customized favorites lists, and interactive map-
+based restaurant displays..
+
+.
+.
