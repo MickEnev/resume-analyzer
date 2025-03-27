@@ -39,5 +39,32 @@ def extract_sections(file_path):
     return sections
 
 
-def extract_skills(text):
-    temp = 0
+def extract_skills(sections):
+    skill_keywords = {"python", "c++", "java", "react", "javascript", "sql", "aws", "docker", "tensorflow", "machine learning", "data visualization", "git", "node.js", "github", "urbana-champaign"}
+    found_skills = set()
+    for section in sections.values():
+        for words in section:
+            skills = words.split()
+            for skill in skills:
+                skill = re.sub(r"^[^a-zA-Z+-]+|[^a-zA-Z+-]+$", "", skill)
+                if skill in skill_keywords:
+                    found_skills.add(skill)
+    
+    return found_skills
+
+def extract_desired_skills(file_path):
+
+    skill_keywords = {"python", "c++", "java", "react", "javascript", "sql", "aws", "docker", "tensorflow", "machine learning", "data visualization", "git", "node.js", "github", "urbana-champaign"}
+    found_skills = set()
+
+    with open(file_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    for line in lines:
+        words = line.split()
+        for word in words:
+            
+            word = re.sub(r"^[^a-zA-Z+-]+|[^a-zA-Z+-]+$", "", word)
+            if word in skill_keywords:
+                found_skills.add(word)
+    return found_skills
+    
