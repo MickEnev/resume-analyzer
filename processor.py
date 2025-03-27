@@ -40,7 +40,8 @@ def extract_sections(file_path):
 
 
 def extract_skills(sections):
-    skill_keywords = {"python", "c++", "java", "react", "javascript", "sql", "aws", "docker", "tensorflow", "machine learning", "data visualization", "git", "node.js", "github", "urbana-champaign"}
+    skill_keywords = {"python", "c++", "java", "react", "javascript", "sql", "aws", "docker", "tensorflow", "machine learning", "data visualization", "git", "node.js", "github", "urbana-champaign", "bachelor's degree", "master's degree", "computer science", "software engineering",
+                    "c", "2024", "2025"}
     found_skills = set()
     for section in sections.values():
         for words in section:
@@ -54,7 +55,8 @@ def extract_skills(sections):
 
 def extract_desired_skills(file_path):
 
-    skill_keywords = {"python", "c++", "java", "react", "javascript", "sql", "aws", "docker", "tensorflow", "machine learning", "data visualization", "git", "node.js", "github", "urbana-champaign"}
+    skill_keywords = {"python", "c++", "java", "react", "javascript", "sql", "aws", "docker", "tensorflow", "machine learning", "data visualization", "git", "node.js", "github", "urbana-champaign", "bachelor's degree", "master's degree", "computer science", "software engineering",
+                    "c", "2024", "2025"}
     found_skills = set()
 
     with open(file_path, 'r', encoding='utf-8') as f:
