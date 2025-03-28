@@ -2,19 +2,19 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  const [currentTime, setCurrentTime] = useState(0)
+  const [currentSkills, setCurrentSkills] = useState(0)
 
   useEffect(() => {
-    fetch('/time').then(res => res.json()).then(data => {
+    fetch('/skills').then(res => res.json()).then(data => {
       console.log(data)
-      setCurrentTime(data.time);
+      setCurrentSkills(data.skills);
     });
   }, []);
 
   return (
     <div className="App">
       <header className="App-header">
-        <p>The current time is {currentTime}.</p>
+        <p>{currentSkills}.</p>
       </header>
     </div>
   );
