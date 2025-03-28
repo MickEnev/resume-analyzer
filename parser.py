@@ -10,9 +10,6 @@ def parse_resume(pdf, output):
         out.write(bytes((12,)))
     out.close
 
-
-# TODO: Implement job description parsing
-
 def parse_job_desc(file_path, output):
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
