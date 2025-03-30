@@ -40,6 +40,7 @@ def extract_sections(file_path):
 
 
 def extract_skills(sections):
+    # TODO: Curate a full list of relevant SWE skills
     skill_keywords = {"python", "c++", "java", "react", "javascript", "sql", "aws", "docker", "tensorflow", "machine learning", "data visualization", "git", "node.js", "github", "urbana-champaign", "bachelor's degree", "master's degree", "computer science", "software engineering",
                     "c", "2024", "2025"}
     found_skills = set()
@@ -54,7 +55,7 @@ def extract_skills(sections):
     return found_skills
 
 def extract_desired_skills(file_path):
-
+    # TODO: Curate a full list of relevant SWE skills
     skill_keywords = {"python", "c++", "java", "react", "javascript", "sql", "aws", "docker", "tensorflow", "machine learning", "data visualization", "git", "node.js", "github", "urbana-champaign", "bachelor's degree", "master's degree", "computer science", "software engineering",
                     "c", "2024", "2025"}
     found_skills = set()

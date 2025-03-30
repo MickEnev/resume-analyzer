@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import ReactMarkdown from 'react-markdown';
 import './App.css'
 
 function App() {
@@ -56,7 +57,7 @@ function App() {
         <button onClick={handleUpload}>Upload</button>
         
         {currentSkills != 0 && (
-          <p>{currentSkills}.</p>
+          <ReactMarkdown>{currentSkills}</ReactMarkdown>
         )}
         
       </header>
