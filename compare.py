@@ -3,14 +3,13 @@ from processor import clean_text, extract_sections, extract_skills, extract_desi
 from llm import compare_requirements
 
 
-def compare_skills():
-    parse_job_desc("job-desc.txt", "job-output.txt")
-
-    clean_text("job-output.txt", "clean-job-output.txt")
-
-    extract_desired_skills("clean-job-output.txt")
-
-
-    sections = extract_sections('output3.txt')
-
-    return compare_requirements(extract_skills(sections), "job-desc.txt")
+def compare_skills(resume, jobDesc):
+    # Parse resume into a text file
+    parse_resume(resume, "Parsed-Resume.txt")
+    # Clean text by removing any white space, non-alphanumeric characters (except for +'s), and changing to all lower case
+    clean_text("Parsed-Resume.txt", "Clean-Parsed_Resume.txt")
+    # Group resume text by section
+    sections = extract_sections("Clean-Parsed_Resume.txt")
+    # Extract relevant skills form sections
+    skills = extract_skills(sections)
+    return compare_requirements(skills, jobDesc)

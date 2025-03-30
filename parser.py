@@ -2,7 +2,7 @@ import pymupdf
 
 def parse_resume(pdf, output):
     doc = pymupdf.open(pdf)
-    out = output
+    out = open(output, "wb")
 
     for page in doc: 
         text = page.get_text().encode("utf-8")
