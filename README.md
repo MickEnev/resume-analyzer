@@ -2,7 +2,8 @@
 
 This is an app that will take in a resume and parse it for key words then use Gemini to match those keywords to a job description and indicate whether or not you will be a good fit for the job as well as other insights. Currently, the user is able to upload both a pdf of their resume, and a text file containing the job description. The resume is then parsed and skills are extracted from the user's resume. These skills as well as the job description are passed to Gemini and it generates a response based on how suited the selected role is for the user. 
 
-![Example-Response](image.png)
+![Example-Response](https://github.com/user-attachments/assets/7bfc8ef9-fbfa-49d3-b5d9-30b51b72e5c1)
+
 
 ## Usage
 
@@ -14,4 +15,4 @@ When both are running you should be able to upload your resume as well as the jo
 
 ## Roadmap
 
-Current focus is on creating a better list for skill searching as well as making the UI a lot nicer.
+Next steps are to add buttons so the user can further prompt the LLM. Buttons will include: Next steps, Skill match percentage, and Check another job description.
