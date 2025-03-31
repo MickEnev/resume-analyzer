@@ -1,4 +1,6 @@
 import re
+import csv
+from io import StringIO
 
 def clean_text(file_path, output_path):
     # Remove bullets
@@ -41,8 +43,13 @@ def extract_sections(file_path):
 
 def extract_skills(sections):
     # TODO: Curate a full list of relevant SWE skills
-    skill_keywords = {"python", "c++", "java", "react", "javascript", "sql", "aws", "docker", "tensorflow", "machine learning", "data visualization", "git", "node.js", "github", "urbana-champaign", "bachelor's degree", "master's degree", "computer science", "software engineering",
-                    "c", "2024", "2025"}
+    file_path = "skills.csv"
+
+    with open(file_path, 'r', encoding='utf-8') as f:
+        csv_reader = csv.reader(f)
+        skills_list = list(csv_reader)
+
+    skill_keywords = csv_to_string(skills_list)
     found_skills = set()
     for section in sections.values():
         for words in section:
@@ -54,6 +61,13 @@ def extract_skills(sections):
     
     return found_skills
 
+def csv_to_string(data):
+    output = StringIO()
+    csv_writer = csv.writer(output)
+    csv_writer.writerows(data)
+    return output.getvalue()
+
+'''
 def extract_desired_skills(file_path):
     # TODO: Curate a full list of relevant SWE skills
     skill_keywords = {"python", "c++", "java", "react", "javascript", "sql", "aws", "docker", "tensorflow", "machine learning", "data visualization", "git", "node.js", "github", "urbana-champaign", "bachelor's degree", "master's degree", "computer science", "software engineering",
@@ -70,4 +84,4 @@ def extract_desired_skills(file_path):
             if word in skill_keywords:
                 found_skills.add(word)
     return found_skills
-    
+    '''

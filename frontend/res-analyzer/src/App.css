@@ -45,3 +45,15 @@
   display: flex;
   flex-direction: column;
 }
+
+.file-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.App-header button {
+  margin-top: 15px;
+}

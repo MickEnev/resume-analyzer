@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import time
-from processor import clean_text, extract_sections, extract_skills, extract_desired_skills
+from processor import clean_text, extract_sections, extract_skills
 from parser import parse_resume, parse_job_desc
 from compare import compare_skills
 import os

@@ -6,6 +6,7 @@ function App() {
   const [currentSkills, setCurrentSkills] = useState(0)
   const [resume, setResume] = useState(null)
   const [jobDesc, setJobDesc] = useState(null)
+  const [loading, setLoading] = useState(false)
 
 
 
@@ -23,6 +24,8 @@ function App() {
       return;
     }
 
+    setLoading(true)
+
     const formData = new FormData();
     formData.append("resume", resume);
     formData.append("job_description", jobDesc);
@@ -38,28 +41,30 @@ function App() {
       console.log("Upload success:", result)
     } catch (error) {
       console.error("Upload error:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Resume Roaster</h1>
         <div className="btn-container">
-          <div className="res-div">
+          <div className="file-input">
             <label for="resume">Resume: </label>
             <input type="file" onChange={(e) => handleFileChange(e, "resume")} />
           </div>
-          <div className="job-div">
+          <div className="file-input">
             <label for="job-desc">Job Description: </label>
             <input type="file" onChange={(e) => handleFileChange(e, "jobDesc")} />
           </div>
         </div>
-        <button onClick={handleUpload}>Upload</button>
-        
-        {currentSkills != 0 && (
-          <ReactMarkdown>{currentSkills}</ReactMarkdown>
-        )}
-        
+        <button className="upload-btn" onClick={handleUpload}>Upload</button>
+        <div className="skills-container">
+          {loading ? <p>Loading...</p> : currentSkills !== 0 && <ReactMarkdown>{currentSkills}</ReactMarkdown>}
+          {/* TODO: Add buttons that let the user further query the LLM. Buttons could include: Next steps, skill match percentage */}
+        </div>
       </header>
     </div>
   );

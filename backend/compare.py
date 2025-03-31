@@ -1,5 +1,5 @@
 from parser import parse_resume, parse_job_desc
-from processor import clean_text, extract_sections, extract_skills, extract_desired_skills
+from processor import clean_text, extract_sections, extract_skills
 from llm import compare_requirements
 
 
